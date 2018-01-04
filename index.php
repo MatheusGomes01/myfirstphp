@@ -180,17 +180,26 @@ $email = "tamo@gmail.com"
 	*/
 
 	// while:
+	$i = 0;
+	while ($i < 10 ){
+		echo "list".$i."<br/>";
+
+		$i++;
+
+	}
+
+
 	?>
 
 	<h4>Repita o Looping</h4>
 	<h6>Usando o for</h6>
 	<ul>
-	<?php for($i = 0;$i<20;$i++){ ?>
-	<li>Lista <?php echo $i; ?>  </li>
-	<?php } ?>
+	
 		</ul>
 
 	
 	</fieldset>
+
+
 
 
