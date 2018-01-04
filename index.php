@@ -163,6 +163,34 @@ $email = "tamo@gmail.com"
 			?>
 		</fieldset>
 
+	<fieldset>
+	<?php 
+	$title5 = "Aula 9 - Aprendendo o for" 
+	?>
 
+	<h4> <?= $title5; ?> </h4>
+
+	<?php
+	// Repeat Loop:
+	// for:
+
+	/*for($i = 0; $i<=10; $i++){
+		echo "lista".$i."<br>";
+	} 
+	*/
+
+	// while:
+	?>
+
+	<h4>Repita o Looping</h4>
+	<h6>Usando o for</h6>
+	<ul>
+	<?php for($i = 0;$i<5;$i++): ?>
+	<li>Lista <?=  $i ?>  </li>
+	<?php endfor; ?>
+		</ul>
+
+	
+	</fieldset>
 
 
