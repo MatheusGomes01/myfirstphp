@@ -149,8 +149,8 @@ $email = "tamo@gmail.com"
 
 			if ($operador == "+"){
 				echo"Soma = ".($value1 + $value2);
-			}else {
-				echo "Não é igual";
+			}elseif ($operador == "-") {
+				echo "Subtração = ". ($value1 - $value2);
 			}
 
 			?>
