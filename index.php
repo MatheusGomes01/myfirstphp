@@ -185,9 +185,9 @@ $email = "tamo@gmail.com"
 	<h4>Repita o Looping</h4>
 	<h6>Usando o for</h6>
 	<ul>
-	<?php for($i = 0;$i<5;$i++): ?>
-	<li>Lista <?=  $i ?>  </li>
-	<?php endfor; ?>
+	<?php for($i = 0;$i<20;$i++){ ?>
+	<li>Lista <?php echo $i; ?>  </li>
+	<?php } ?>
 		</ul>
 
 	
