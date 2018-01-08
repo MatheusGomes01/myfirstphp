@@ -174,30 +174,55 @@ $email = "tamo@gmail.com"
 	// Repeat Loop:
 	// for:
 
-	/*for($i = 0; $i<=10; $i++){
+	/*for($i = 0; $i<=10; $i++){-
 		echo "lista".$i."<br>";
 	} 
 	*/
 
 	// while:
-	$i = 0;
+	/*$i = 0;
 	while ($i < 10 ){
 		echo "list".$i."<br/>";
 
 		$i++;
 
 	}
+	*/
 
 
 	?>
 
 	<h4>Repita o Looping</h4>
-	<h6>Usando o for</h6>
+	<h6>Usando o fwhile</h6>
 	<ul>
+	<?php
+	$i =0;
+	 while($i<10){
+	 ?>
+
+	<li> list <?php echo $i; ?></li>
 	
+	<?php
+	$i++;
+	 }?>
 		</ul>
 
 	
+	</fieldset>
+
+	<fieldset>
+		
+		<?
+
+		// Array
+
+		$x123[0] = "red";
+		$x123[1] = "blue";
+
+		echo $x123[0];
+
+
+		?>
 	</fieldset>
 
 
