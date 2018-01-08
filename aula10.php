@@ -13,7 +13,11 @@
 
         $y = array ("cat","dog");
 
-        echo $y[1];
+        //echo $y[1];
+
+        $var1 = array(0=>"cat",1=>"dog",3);
+
+        echo $var1[1];
 
 
         ?>
