@@ -1,17 +1,42 @@
-<?
-session_start();
-$login = "admin";
-$password = "12345";
+<?php
 
-if ($login == "admin" && $password == "12345"){
-	$_SESSION['login'] = true;
+echo $_REQUEST['name']."<br/>";
 
-	echo "sucess";
-
-}else{
-	echo"failed";
-}
 
 ?>
 
-<a href = "session/secret.php">Get in</a>
+<html>
+<head>
+	<title> Working with form</title>	
+	<style>
+		fieldset input, fieldset textarea{
+			width:100%;
+			margin-bottom: 10px;
+		}
+		fieldset{
+		width: 400px;	
+		}
+		legend{
+			font-size: 26px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<form action="index.php" method="get">
+	<fieldset>
+		<legend>Sample form</legend>
+		<label>Name:</label>
+		<input type="text" name="name" value="<?=$_REQUEST['name']?>">
+		<label>E-mail:</label>
+	<input type="text" name="email" value="<?=$_REQUEST['email']?>">
+		<label>Message:</label>
+		<textarea name="message"><?=$_REQUEST['message']?></textarea>
+		</fieldset>
+		<input type="submit" value="submit">
+	</form>
+
+</body>
+</html>
